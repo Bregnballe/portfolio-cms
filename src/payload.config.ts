@@ -2,8 +2,9 @@ import path from "path";
 
 import { mongooseAdapter } from "@payloadcms/db-mongodb";
 import { webpackBundler } from "@payloadcms/bundler-webpack";
-import { slateEditor } from "@payloadcms/richtext-slate";
+//import { slateEditor } from "@payloadcms/richtext-slate";
 import { buildConfig } from "payload/config";
+import { lexicalEditor } from "@payloadcms/richtext-lexical";
 
 // S3
 import { s3Adapter } from "@payloadcms/plugin-cloud-storage/s3";
@@ -35,7 +36,7 @@ export default buildConfig({
 		user: Users.slug,
 		bundler: webpackBundler(),
 	},
-	editor: slateEditor({}),
+	editor: lexicalEditor({}),
 	collections: [Users, Projects, Media],
 	typescript: {
 		outputFile: path.resolve(__dirname, "payload-types.ts"),

@@ -56,6 +56,11 @@ const Projects: CollectionConfig = {
 				},
 			],
 		},
+		{
+			name: "description",
+			type: "richText",
+			label: "Description",
+		},
 
 		/*{
 			name: "layout",
