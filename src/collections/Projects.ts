@@ -1,6 +1,6 @@
 import { BeforeDuplicate, CollectionConfig } from "payload/types";
 
-//import { HeroBlock } from "../blocks/Hero";
+import { GalleryImage } from "../blocks/GalleryImage";
 import { SlugField } from "../fields/SlugField";
 
 const Projects: CollectionConfig = {
@@ -61,12 +61,12 @@ const Projects: CollectionConfig = {
 			type: "richText",
 			label: "Description",
 		},
-
-		/*{
+		/*
+		{
 			name: "layout",
 			label: "Layout",
 			type: "blocks",
-			blocks: [HeroBlock],
+			blocks: [GalleryImage],
 		},*/
 	],
 	timestamps: true,
